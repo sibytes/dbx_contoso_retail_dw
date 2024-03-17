@@ -1,0 +1,26 @@
+fields:
+-   metadata: {}
+    name: BusinessEntityID
+    nullable: true
+    type: integer
+-   metadata: {}
+    name: RateChangeDate
+    nullable: true
+    type: timestamp
+-   metadata: {}
+    name: Rate
+    nullable: true
+    type: double
+-   metadata: {}
+    name: PayFrequency
+    nullable: true
+    type: integer
+-   metadata: {}
+    name: ModifiedDate
+    nullable: true
+    type: timestamp
+-   metadata: {}
+    name: _corrupt_record
+    nullable: true
+    type: string
+type: struct
