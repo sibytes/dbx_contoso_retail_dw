@@ -2,97 +2,97 @@
     "fields": [
         {
             "metadata": {},
-            "name": "InventoryKey",
+            "name": "inventory_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "DateKey",
+            "name": "date_key",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "StoreKey",
+            "name": "store_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ProductKey",
+            "name": "product_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "CurrencyKey",
+            "name": "currency_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "OnHandQuantity",
+            "name": "on_hand_quantity",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "OnOrderQuantity",
+            "name": "on_order_quantity",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "SafetyStockQuantity",
+            "name": "safety_stock_quantity",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "UnitCost",
+            "name": "unit_cost",
             "nullable": true,
             "type": "double"
         },
         {
             "metadata": {},
-            "name": "DaysInStock",
+            "name": "days_in_stock",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "MinDayInStock",
+            "name": "min_day_in_stock",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "MaxDayInStock",
+            "name": "max_day_in_stock",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "Aging",
+            "name": "aging",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

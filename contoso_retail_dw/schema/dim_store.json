@@ -2,151 +2,151 @@
     "fields": [
         {
             "metadata": {},
-            "name": "StoreKey",
+            "name": "store_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "GeographyKey",
+            "name": "geography_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "StoreManager",
+            "name": "store_manager",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "StoreType",
+            "name": "store_type",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "StoreName",
+            "name": "store_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "StoreDescription",
+            "name": "store_description",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Status",
+            "name": "status",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "OpenDate",
+            "name": "open_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "CloseDate",
+            "name": "close_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "EntityKey",
+            "name": "entity_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ZipCode",
+            "name": "zip_code",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ZipCodeExtension",
+            "name": "zip_code_extension",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "StorePhone",
+            "name": "store_phone",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "StoreFax",
+            "name": "store_fax",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "AddressLine1",
+            "name": "address_line1",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "AddressLine2",
+            "name": "address_line2",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "CloseReason",
+            "name": "close_reason",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "EmployeeCount",
+            "name": "employee_count",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "SellingAreaSize",
+            "name": "selling_area_size",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LastRemodelDate",
+            "name": "last_remodel_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "GeoLocation",
+            "name": "geo_location",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Geometry",
+            "name": "geometry",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

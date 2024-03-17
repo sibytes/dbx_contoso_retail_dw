@@ -1,120 +1,120 @@
 fields:
 -   metadata: {}
-    name: Datekey
+    name: datekey
     nullable: true
     type: timestamp
 -   metadata:
         __detected_date_formats: yyyy-M-d
-    name: FullDateLabel
+    name: full_date_label
     nullable: true
     type: date
 -   metadata:
         __detected_date_formats: yyyy/M/d
-    name: DateDescription
+    name: date_description
     nullable: true
     type: date
 -   metadata: {}
-    name: CalendarYear
+    name: calendar_year
     nullable: true
     type: integer
 -   metadata: {}
-    name: CalendarYearLabel
+    name: calendar_year_label
     nullable: true
     type: string
 -   metadata: {}
-    name: CalendarHalfYear
+    name: calendar_half_year
     nullable: true
     type: integer
 -   metadata: {}
-    name: CalendarHalfYearLabel
+    name: calendar_half_year_label
     nullable: true
     type: string
 -   metadata: {}
-    name: CalendarQuarter
+    name: calendar_quarter
     nullable: true
     type: integer
 -   metadata: {}
-    name: CalendarQuarterLabel
+    name: calendar_quarter_label
     nullable: true
     type: string
 -   metadata: {}
-    name: CalendarMonth
+    name: calendar_month
     nullable: true
     type: integer
 -   metadata: {}
-    name: CalendarMonthLabel
+    name: calendar_month_label
     nullable: true
     type: string
 -   metadata: {}
-    name: CalendarWeek
+    name: calendar_week
     nullable: true
     type: integer
 -   metadata: {}
-    name: CalendarWeekLabel
+    name: calendar_week_label
     nullable: true
     type: string
 -   metadata: {}
-    name: CalendarDayOfWeek
+    name: calendar_day_of_week
     nullable: true
     type: integer
 -   metadata: {}
-    name: CalendarDayOfWeekLabel
+    name: calendar_day_of_week_label
     nullable: true
     type: string
 -   metadata: {}
-    name: FiscalYear
+    name: fiscal_year
     nullable: true
     type: integer
 -   metadata: {}
-    name: FiscalYearLabel
+    name: fiscal_year_label
     nullable: true
     type: string
 -   metadata: {}
-    name: FiscalHalfYear
+    name: fiscal_half_year
     nullable: true
     type: integer
 -   metadata: {}
-    name: FiscalHalfYearLabel
+    name: fiscal_half_year_label
     nullable: true
     type: string
 -   metadata: {}
-    name: FiscalQuarter
+    name: fiscal_quarter
     nullable: true
     type: integer
 -   metadata: {}
-    name: FiscalQuarterLabel
+    name: fiscal_quarter_label
     nullable: true
     type: string
 -   metadata: {}
-    name: FiscalMonth
+    name: fiscal_month
     nullable: true
     type: integer
 -   metadata: {}
-    name: FiscalMonthLabel
+    name: fiscal_month_label
     nullable: true
     type: string
 -   metadata: {}
-    name: IsWorkDay
+    name: is_work_day
     nullable: true
     type: string
 -   metadata: {}
-    name: IsHoliday
+    name: is_holiday
     nullable: true
     type: integer
 -   metadata: {}
-    name: HolidayName
+    name: holiday_name
     nullable: true
     type: string
 -   metadata: {}
-    name: EuropeSeason
+    name: europe_season
     nullable: true
     type: string
 -   metadata: {}
-    name: NorthAmericaSeason
+    name: north_america_season
     nullable: true
     type: string
 -   metadata: {}
-    name: AsiaSeason
+    name: asia_season
     nullable: true
     type: string
 type: struct

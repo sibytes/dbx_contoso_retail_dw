@@ -1,130 +1,130 @@
 fields:
 -   metadata: {}
-    name: ProductKey
+    name: product_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: ProductLabel
+    name: product_label
     nullable: true
     type: integer
 -   metadata: {}
-    name: ProductName
+    name: product_name
     nullable: true
     type: string
 -   metadata: {}
-    name: ProductDescription
+    name: product_description
     nullable: true
     type: string
 -   metadata: {}
-    name: ProductSubcategoryKey
+    name: product_subcategory_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: Manufacturer
+    name: manufacturer
     nullable: true
     type: string
 -   metadata: {}
-    name: BrandName
+    name: brand_name
     nullable: true
     type: string
 -   metadata: {}
-    name: ClassID
+    name: class_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: ClassName
+    name: class_name
     nullable: true
     type: string
 -   metadata: {}
-    name: StyleID
+    name: style_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: StyleName
+    name: style_name
     nullable: true
     type: string
 -   metadata: {}
-    name: ColorID
+    name: color_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: ColorName
+    name: color_name
     nullable: true
     type: string
 -   metadata: {}
-    name: Size
+    name: size
     nullable: true
     type: string
 -   metadata: {}
-    name: SizeRange
+    name: size_range
     nullable: true
     type: string
 -   metadata: {}
-    name: SizeUnitMeasureID
+    name: size_unit_measure_id
     nullable: true
     type: string
 -   metadata: {}
-    name: Weight
+    name: weight
     nullable: true
     type: double
 -   metadata: {}
-    name: WeightUnitMeasureID
+    name: weight_unit_measure_id
     nullable: true
     type: string
 -   metadata: {}
-    name: UnitOfMeasureID
+    name: unit_of_measure_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: UnitOfMeasureName
+    name: unit_of_measure_name
     nullable: true
     type: string
 -   metadata: {}
-    name: StockTypeID
+    name: stock_type_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: StockTypeName
+    name: stock_type_name
     nullable: true
     type: string
 -   metadata: {}
-    name: UnitCost
+    name: unit_cost
     nullable: true
     type: double
 -   metadata: {}
-    name: UnitPrice
+    name: unit_price
     nullable: true
     type: double
 -   metadata: {}
-    name: AvailableForSaleDate
+    name: available_for_sale_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: StopSaleDate
+    name: stop_sale_date
     nullable: true
     type: string
 -   metadata: {}
-    name: Status
+    name: status
     nullable: true
     type: string
 -   metadata: {}
-    name: ImageURL
+    name: image_url
     nullable: true
     type: string
 -   metadata: {}
-    name: ProductURL
+    name: product_url
     nullable: true
     type: string
 -   metadata: {}
-    name: ETLLoadID
+    name: etl_load_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: LoadDate
+    name: load_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: UpdateDate
+    name: update_date
     nullable: true
     type: timestamp
 type: struct

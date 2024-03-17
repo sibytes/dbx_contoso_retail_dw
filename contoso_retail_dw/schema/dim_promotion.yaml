@@ -1,58 +1,58 @@
 fields:
 -   metadata: {}
-    name: PromotionKey
+    name: promotion_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: PromotionLabel
+    name: promotion_label
     nullable: true
     type: integer
 -   metadata: {}
-    name: PromotionName
+    name: promotion_name
     nullable: true
     type: string
 -   metadata: {}
-    name: PromotionDescription
+    name: promotion_description
     nullable: true
     type: string
 -   metadata: {}
-    name: DiscountPercent
+    name: discount_percent
     nullable: true
     type: double
 -   metadata: {}
-    name: PromotionType
+    name: promotion_type
     nullable: true
     type: string
 -   metadata: {}
-    name: PromotionCategory
+    name: promotion_category
     nullable: true
     type: string
 -   metadata: {}
-    name: StartDate
+    name: start_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: EndDate
+    name: end_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: MinQuantity
+    name: min_quantity
     nullable: true
     type: string
 -   metadata: {}
-    name: MaxQuantity
+    name: max_quantity
     nullable: true
     type: string
 -   metadata: {}
-    name: ETLLoadID
+    name: etl_load_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: LoadDate
+    name: load_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: UpdateDate
+    name: update_date
     nullable: true
     type: timestamp
 type: struct

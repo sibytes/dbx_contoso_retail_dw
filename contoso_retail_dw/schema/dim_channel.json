@@ -2,43 +2,43 @@
     "fields": [
         {
             "metadata": {},
-            "name": "ChannelKey",
+            "name": "channel_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ChannelLabel",
+            "name": "channel_label",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ChannelName",
+            "name": "channel_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ChannelDescription",
+            "name": "channel_description",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

@@ -96,18 +96,28 @@ checkpoints
 from etl import tables, PROJECT
 import json
 import yaml
+import re
+from pyspark.sql import functions as fn
 
+def _camel_to_snake(name:str):
+    snake = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
+    return re.sub('([a-z0-9])([A-Z])', r'\1_\2', snake).lower()
+  
 format = "csv"
 ext = "csv"
-filename_mask = f"{table}-*"
+
 env = "dev"
 options = {"sep": "|", "header": True, "inferSchema": True}
 root = f"/Volumes/{env}_landing/{PROJECT}/{PROJECT}/{format}"
 
 for table, details in tables().items():
+  filename_mask = f"{table}-*"
   path = f"{root}/{table}/*/{filename_mask}.{ext}"
 
-  df = spark.read.format("csv").options(**options).load(path)
+  df = spark.read.format(format).options(**options).load(path)
+  for c in df.columns:
+    df = df.withColumnRenamed(existing=c, new=_camel_to_snake(c))
+
   schema = json.loads(df.schema.json())
   with open(f"../schema/{table}.json", "w", encoding="utf-8") as f:
     f.write(json.dumps(schema, indent=4))

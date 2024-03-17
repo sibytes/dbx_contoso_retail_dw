@@ -2,49 +2,49 @@
     "fields": [
         {
             "metadata": {},
-            "name": "ExchangeRateKey",
+            "name": "exchange_rate_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "CurrencyKey",
+            "name": "currency_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "DateKey",
+            "name": "date_key",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "AverageRate",
+            "name": "average_rate",
             "nullable": true,
             "type": "double"
         },
         {
             "metadata": {},
-            "name": "EndOfDayRate",
+            "name": "end_of_day_rate",
             "nullable": true,
             "type": "double"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

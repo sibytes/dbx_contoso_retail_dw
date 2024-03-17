@@ -2,163 +2,163 @@
     "fields": [
         {
             "metadata": {},
-            "name": "EmployeeKey",
+            "name": "employee_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ParentEmployeeKey",
+            "name": "parent_employee_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "FirstName",
+            "name": "first_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "LastName",
+            "name": "last_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "MiddleName",
+            "name": "middle_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Title",
+            "name": "title",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "HireDate",
+            "name": "hire_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "BirthDate",
+            "name": "birth_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "EmailAddress",
+            "name": "email_address",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Phone",
+            "name": "phone",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "MaritalStatus",
+            "name": "marital_status",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "EmergencyContactName",
+            "name": "emergency_contact_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "EmergencyContactPhone",
+            "name": "emergency_contact_phone",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "SalariedFlag",
+            "name": "salaried_flag",
             "nullable": true,
             "type": "boolean"
         },
         {
             "metadata": {},
-            "name": "Gender",
+            "name": "gender",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "PayFrequency",
+            "name": "pay_frequency",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "BaseRate",
+            "name": "base_rate",
             "nullable": true,
             "type": "double"
         },
         {
             "metadata": {},
-            "name": "VacationHours",
+            "name": "vacation_hours",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "CurrentFlag",
+            "name": "current_flag",
             "nullable": true,
             "type": "boolean"
         },
         {
             "metadata": {},
-            "name": "SalesPersonFlag",
+            "name": "sales_person_flag",
             "nullable": true,
             "type": "boolean"
         },
         {
             "metadata": {},
-            "name": "DepartmentName",
+            "name": "department_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "StartDate",
+            "name": "start_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "EndDate",
+            "name": "end_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "Status",
+            "name": "status",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

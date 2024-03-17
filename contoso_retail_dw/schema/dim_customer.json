@@ -2,175 +2,175 @@
     "fields": [
         {
             "metadata": {},
-            "name": "CustomerKey",
+            "name": "customer_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "GeographyKey",
+            "name": "geography_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "CustomerLabel",
+            "name": "customer_label",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Title",
+            "name": "title",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "FirstName",
+            "name": "first_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "MiddleName",
+            "name": "middle_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "LastName",
+            "name": "last_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "NameStyle",
+            "name": "name_style",
             "nullable": true,
             "type": "boolean"
         },
         {
             "metadata": {},
-            "name": "BirthDate",
+            "name": "birth_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "MaritalStatus",
+            "name": "marital_status",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Suffix",
+            "name": "suffix",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Gender",
+            "name": "gender",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "EmailAddress",
+            "name": "email_address",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "YearlyIncome",
+            "name": "yearly_income",
             "nullable": true,
             "type": "double"
         },
         {
             "metadata": {},
-            "name": "TotalChildren",
+            "name": "total_children",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "NumberChildrenAtHome",
+            "name": "number_children_at_home",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "Education",
+            "name": "education",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Occupation",
+            "name": "occupation",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "HouseOwnerFlag",
+            "name": "house_owner_flag",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "NumberCarsOwned",
+            "name": "number_cars_owned",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "AddressLine1",
+            "name": "address_line1",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "AddressLine2",
+            "name": "address_line2",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Phone",
+            "name": "phone",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "DateFirstPurchase",
+            "name": "date_first_purchase",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "CustomerType",
+            "name": "customer_type",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "CompanyName",
+            "name": "company_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

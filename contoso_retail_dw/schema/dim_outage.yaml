@@ -1,46 +1,46 @@
 fields:
 -   metadata: {}
-    name: OutageKey
+    name: outage_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: OutageLabel
+    name: outage_label
     nullable: true
     type: integer
 -   metadata: {}
-    name: OutageName
+    name: outage_name
     nullable: true
     type: string
 -   metadata: {}
-    name: OutageDescription
+    name: outage_description
     nullable: true
     type: string
 -   metadata: {}
-    name: OutageType
+    name: outage_type
     nullable: true
     type: string
 -   metadata: {}
-    name: OutageTypeDescription
+    name: outage_type_description
     nullable: true
     type: string
 -   metadata: {}
-    name: OutageSubType
+    name: outage_sub_type
     nullable: true
     type: string
 -   metadata: {}
-    name: OutageSubTypeDescription
+    name: outage_sub_type_description
     nullable: true
     type: string
 -   metadata: {}
-    name: ETLLoadID
+    name: etl_load_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: LoadDate
+    name: load_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: UpdateDate
+    name: update_date
     nullable: true
     type: timestamp
 type: struct

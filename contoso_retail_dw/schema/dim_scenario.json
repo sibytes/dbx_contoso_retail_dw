@@ -2,43 +2,43 @@
     "fields": [
         {
             "metadata": {},
-            "name": "ScenarioKey",
+            "name": "scenario_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ScenarioLabel",
+            "name": "scenario_label",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ScenarioName",
+            "name": "scenario_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ScenarioDescription",
+            "name": "scenario_description",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

@@ -2,91 +2,91 @@
     "fields": [
         {
             "metadata": {},
-            "name": "SalesTerritoryKey",
+            "name": "sales_territory_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "GeographyKey",
+            "name": "geography_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "SalesTerritoryLabel",
+            "name": "sales_territory_label",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "SalesTerritoryName",
+            "name": "sales_territory_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "SalesTerritoryRegion",
+            "name": "sales_territory_region",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "SalesTerritoryCountry",
+            "name": "sales_territory_country",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "SalesTerritoryGroup",
+            "name": "sales_territory_group",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "SalesTerritoryLevel",
+            "name": "sales_territory_level",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "SalesTerritoryManager",
+            "name": "sales_territory_manager",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "StartDate",
+            "name": "start_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "EndDate",
+            "name": "end_date",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Status",
+            "name": "status",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

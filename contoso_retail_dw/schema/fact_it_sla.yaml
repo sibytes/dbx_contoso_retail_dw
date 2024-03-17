@@ -1,46 +1,46 @@
 fields:
 -   metadata: {}
-    name: ITSLAkey
+    name: itsl_akey
     nullable: true
     type: integer
 -   metadata: {}
-    name: DateKey
+    name: date_key
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: StoreKey
+    name: store_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: MachineKey
+    name: machine_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: OutageKey
+    name: outage_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: OutageStartTime
+    name: outage_start_time
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: OutageEndTime
+    name: outage_end_time
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: DownTime
+    name: down_time
     nullable: true
     type: integer
 -   metadata: {}
-    name: ETLLoadID
+    name: etl_load_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: LoadDate
+    name: load_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: UpdateDate
+    name: update_date
     nullable: true
     type: timestamp
 type: struct

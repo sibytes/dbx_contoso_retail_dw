@@ -1,34 +1,34 @@
 fields:
 -   metadata: {}
-    name: ProductSubcategoryKey
+    name: product_subcategory_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: ProductSubcategoryLabel
+    name: product_subcategory_label
     nullable: true
     type: integer
 -   metadata: {}
-    name: ProductSubcategoryName
+    name: product_subcategory_name
     nullable: true
     type: string
 -   metadata: {}
-    name: ProductSubcategoryDescription
+    name: product_subcategory_description
     nullable: true
     type: string
 -   metadata: {}
-    name: ProductCategoryKey
+    name: product_category_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: ETLLoadID
+    name: etl_load_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: LoadDate
+    name: load_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: UpdateDate
+    name: update_date
     nullable: true
     type: timestamp
 type: struct

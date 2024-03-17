@@ -2,67 +2,67 @@
     "fields": [
         {
             "metadata": {},
-            "name": "StrategyPlanKey",
+            "name": "strategy_plan_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "Datekey",
+            "name": "datekey",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "EntityKey",
+            "name": "entity_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ScenarioKey",
+            "name": "scenario_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "AccountKey",
+            "name": "account_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "CurrencyKey",
+            "name": "currency_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "ProductCategoryKey",
+            "name": "product_category_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "Amount",
+            "name": "amount",
             "nullable": true,
             "type": "double"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

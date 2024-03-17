@@ -2,61 +2,61 @@
     "fields": [
         {
             "metadata": {},
-            "name": "GeographyKey",
+            "name": "geography_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "GeographyType",
+            "name": "geography_type",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ContinentName",
+            "name": "continent_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "CityName",
+            "name": "city_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "StateProvinceName",
+            "name": "state_province_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "RegionCountryName",
+            "name": "region_country_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Geometry",
+            "name": "geometry",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

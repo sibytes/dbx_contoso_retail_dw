@@ -1,86 +1,86 @@
 fields:
 -   metadata: {}
-    name: OnlineSalesKey
+    name: online_sales_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: DateKey
+    name: date_key
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: StoreKey
+    name: store_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: ProductKey
+    name: product_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: PromotionKey
+    name: promotion_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: CurrencyKey
+    name: currency_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: CustomerKey
+    name: customer_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: SalesOrderNumber
+    name: sales_order_number
     nullable: true
     type: string
 -   metadata: {}
-    name: SalesOrderLineNumber
+    name: sales_order_line_number
     nullable: true
     type: integer
 -   metadata: {}
-    name: SalesQuantity
+    name: sales_quantity
     nullable: true
     type: integer
 -   metadata: {}
-    name: SalesAmount
+    name: sales_amount
     nullable: true
     type: double
 -   metadata: {}
-    name: ReturnQuantity
+    name: return_quantity
     nullable: true
     type: integer
 -   metadata: {}
-    name: ReturnAmount
+    name: return_amount
     nullable: true
     type: double
 -   metadata: {}
-    name: DiscountQuantity
+    name: discount_quantity
     nullable: true
     type: integer
 -   metadata: {}
-    name: DiscountAmount
+    name: discount_amount
     nullable: true
     type: double
 -   metadata: {}
-    name: TotalCost
+    name: total_cost
     nullable: true
     type: double
 -   metadata: {}
-    name: UnitCost
+    name: unit_cost
     nullable: true
     type: double
 -   metadata: {}
-    name: UnitPrice
+    name: unit_price
     nullable: true
     type: double
 -   metadata: {}
-    name: ETLLoadID
+    name: etl_load_id
     nullable: true
     type: string
 -   metadata: {}
-    name: LoadDate
+    name: load_date
     nullable: true
     type: string
 -   metadata: {}
-    name: UpdateDate
+    name: update_date
     nullable: true
     type: string
 type: struct

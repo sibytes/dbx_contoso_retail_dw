@@ -1,54 +1,54 @@
 fields:
 -   metadata: {}
-    name: AccountKey
+    name: account_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: ParentAccountKey
+    name: parent_account_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: AccountLabel
+    name: account_label
     nullable: true
     type: integer
 -   metadata: {}
-    name: AccountName
+    name: account_name
     nullable: true
     type: string
 -   metadata: {}
-    name: AccountDescription
+    name: account_description
     nullable: true
     type: string
 -   metadata: {}
-    name: AccountType
+    name: account_type
     nullable: true
     type: string
 -   metadata: {}
-    name: Operator
+    name: operator
     nullable: true
     type: string
 -   metadata: {}
-    name: CustomMembers
+    name: custom_members
     nullable: true
     type: string
 -   metadata: {}
-    name: ValueType
+    name: value_type
     nullable: true
     type: string
 -   metadata: {}
-    name: CustomMemberOptions
+    name: custom_member_options
     nullable: true
     type: string
 -   metadata: {}
-    name: ETLLoadID
+    name: etl_load_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: LoadDate
+    name: load_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: UpdateDate
+    name: update_date
     nullable: true
     type: timestamp
 type: struct

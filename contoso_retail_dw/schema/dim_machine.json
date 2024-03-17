@@ -2,109 +2,109 @@
     "fields": [
         {
             "metadata": {},
-            "name": "MachineKey",
+            "name": "machine_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "MachineLabel",
+            "name": "machine_label",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "StoreKey",
+            "name": "store_key",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "MachineType",
+            "name": "machine_type",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "MachineName",
+            "name": "machine_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "MachineDescription",
+            "name": "machine_description",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "VendorName",
+            "name": "vendor_name",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "MachineOS",
+            "name": "machine_os",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "MachineSource",
+            "name": "machine_source",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "MachineHardware",
+            "name": "machine_hardware",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "MachineSoftware",
+            "name": "machine_software",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "Status",
+            "name": "status",
             "nullable": true,
             "type": "string"
         },
         {
             "metadata": {},
-            "name": "ServiceStartDate",
+            "name": "service_start_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "DecommissionDate",
+            "name": "decommission_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "LastModifiedDate",
+            "name": "last_modified_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "ETLLoadID",
+            "name": "etl_load_id",
             "nullable": true,
             "type": "integer"
         },
         {
             "metadata": {},
-            "name": "LoadDate",
+            "name": "load_date",
             "nullable": true,
             "type": "timestamp"
         },
         {
             "metadata": {},
-            "name": "UpdateDate",
+            "name": "update_date",
             "nullable": true,
             "type": "timestamp"
         }

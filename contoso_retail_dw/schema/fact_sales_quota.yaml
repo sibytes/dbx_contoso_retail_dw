@@ -1,54 +1,54 @@
 fields:
 -   metadata: {}
-    name: SalesQuotaKey
+    name: sales_quota_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: ChannelKey
+    name: channel_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: StoreKey
+    name: store_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: ProductKey
+    name: product_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: DateKey
+    name: date_key
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: CurrencyKey
+    name: currency_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: ScenarioKey
+    name: scenario_key
     nullable: true
     type: integer
 -   metadata: {}
-    name: SalesQuantityQuota
+    name: sales_quantity_quota
     nullable: true
     type: double
 -   metadata: {}
-    name: SalesAmountQuota
+    name: sales_amount_quota
     nullable: true
     type: double
 -   metadata: {}
-    name: GrossMarginQuota
+    name: gross_margin_quota
     nullable: true
     type: double
 -   metadata: {}
-    name: ETLLoadID
+    name: etl_load_id
     nullable: true
     type: integer
 -   metadata: {}
-    name: LoadDate
+    name: load_date
     nullable: true
     type: timestamp
 -   metadata: {}
-    name: UpdateDate
+    name: update_date
     nullable: true
     type: timestamp
 type: struct
