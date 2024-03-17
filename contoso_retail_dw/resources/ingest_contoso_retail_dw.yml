@@ -8,696 +8,259 @@ resources:
           notebook_task:
             notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/intialise
             source: WORKSPACE
-          existing_cluster_id: 1003-160019-i21cm8l3
+          existing_cluster_id: 0317-110841-x2mt4zty
 
+        -   depends_on:
+            -   task_key: dim_account
+            existing_cluster_id: 0317-110841-x2mt4zty
+            notebook_task:
+                base_parameters:
+                    table: dim_account
+                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
+                source: WORKSPACE
+            task_key: dim_account
+
+        -   depends_on: 
+            -   task_key: dim_account
+            existing_cluster_id: 0317-110841-x2mt4zty
+            notebook_task:
+                base_parameters:
+                    table: dim_channel
+                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
+                source: WORKSPACE
+            task_key: dim_channel
 
         -   depends_on:
-            -   task_key: initialise
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: 
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: hr_department
+                    table: dim_currency
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: hr_department
+            task_key: dim_currency
+
         -   depends_on:
-            -   task_key: hr_department
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_channel
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: hr_employee
+                    table: dim_customer
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: hr_employee
+            task_key: dim_customer
+
         -   depends_on:
-            -   task_key: hr_employee
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_customer
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: hr_employee_department_history
+                    table: dim_date
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: hr_employee_department_history
+            task_key: dim_date
+
         -   depends_on:
-            -   task_key: hr_employee_department_history
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_date
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: hr_employee_pay_history
+                    table: dim_employee
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: hr_employee_pay_history
-        # -   depends_on:
-        #     -   task_key: hr_employee_pay_history
-        #     existing_cluster_id: 1003-160019-i21cm8l3
-        #     notebook_task:
-        #         base_parameters:
-        #             table: hr_job_candidate
-        #         notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-        #         source: WORKSPACE
-        #     task_key: hr_job_candidate
+            task_key: dim_employee
+
         -   depends_on:
-            -   task_key: hr_employee_pay_history
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_employee
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: hr_shift
+                    table: dim_entity
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: hr_shift
+            task_key: dim_entity
+
         -   depends_on:
-            -   task_key: hr_shift
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_entity
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_address
+                    table: dim_geography
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_address
+            task_key: dim_geography
+
         -   depends_on:
-            -   task_key: person_address
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_geography
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_address_type
+                    table: dim_machine
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_address_type
+            task_key: dim_machine
+
         -   depends_on:
-            -   task_key: person_address_type
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_machine
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_business_entity
+                    table: dim_outage
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_business_entity
+            task_key: dim_outage
+
         -   depends_on:
-            -   task_key: person_business_entity
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_outage
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_business_entity_address
+                    table: dim_product
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_business_entity_address
+            task_key: dim_product
+
         -   depends_on:
-            -   task_key: person_business_entity_address
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_product
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_business_entity_contact
+                    table: dim_product_sub_category
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_business_entity_contact
+            task_key: dim_product_sub_category
+
         -   depends_on:
-            -   task_key: person_business_entity_contact
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_product_sub_category
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_contact_type
+                    table: dim_promotion
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_contact_type
+            task_key: dim_promotion
+
         -   depends_on:
-            -   task_key: person_contact_type
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_promotion
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_country_region
+                    table: dim_sales_territory
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_country_region
+            task_key: dim_sales_territory
+
         -   depends_on:
-            -   task_key: person_country_region
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_sales_territory
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_email_address
+                    table: dim_scenario
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_email_address
+            task_key: dim_scenario
+
         -   depends_on:
-            -   task_key: person_email_address
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_scenario
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_password
+                    table: dim_store
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_password
+            task_key: dim_store
+
         -   depends_on:
-            -   task_key: person_password
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: dim_store
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_person
+                    table: fact_inventory
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_person
+            task_key: fact_inventory
+
         -   depends_on:
-            -   task_key: person_person
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: fact_inventory
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_person_phone
+                    table: fact_it_machine
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_person_phone
+            task_key: fact_it_machine
+
         -   depends_on:
-            -   task_key: initialise
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: fact_it_machine
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_phone_number_type
+                    table: fact_it_sla
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_phone_number_type
+            task_key: fact_it_sla
+
         -   depends_on:
-            -   task_key: person_phone_number_type
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: fact_it_sla
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: person_state_province
+                    table: fact_online_sales
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: person_state_province
+            task_key: fact_online_sales
+
         -   depends_on:
-            -   task_key: person_state_province
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
+            -   task_key: fact_online_sales
+            existing_cluster_id: 0317-110841-x2mt4zty
+            notebook_task: 
                 base_parameters:
-                    table: production_bill_of_materials
+                    table: fact_sales
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: production_bill_of_materials
+            task_key: fact_sales
+
         -   depends_on:
-            -   task_key: production_bill_of_materials
-            existing_cluster_id: 1003-160019-i21cm8l3
+            -   task_key: fact_sales
+            existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
-                    table: production_culture
+                    table: fact_strategy_plan
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
-            task_key: production_culture
-        # -   depends_on:
-        #     -   task_key: production_culture
-        #     existing_cluster_id: 1003-160019-i21cm8l3
-        #     notebook_task:
-        #         base_parameters:
-        #             table: production_document
-        #         notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-        #         source: WORKSPACE
-        #     task_key: production_document
-        -   depends_on:
-            -   task_key: production_culture
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_illustration
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_illustration
-        -   depends_on:
-            -   task_key: production_illustration
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_location
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_location
-        -   depends_on:
-            -   task_key: production_location
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product
-        -   depends_on:
-            -   task_key: production_product
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_category
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_category
-        -   depends_on:
-            -   task_key: production_product_category
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_cost_history
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_cost_history
-        -   depends_on:
-            -   task_key: production_product_cost_history
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_description
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_description
-        -   depends_on:
-            -   task_key: production_product_description
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_document
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_document
-        -   depends_on:
-            -   task_key: production_product_document
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_inventory
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_inventory
-        -   depends_on:
-            -   task_key: production_product_inventory
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_list_price_history
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_list_price_history
-        # -   depends_on:
-        #     -   task_key: production_product_list_price_history
-        #     existing_cluster_id: 1003-160019-i21cm8l3
-        #     notebook_task:
-        #         base_parameters:
-        #             table: production_product_model
-        #         notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-        #         source: WORKSPACE
-        #     task_key: production_product_model
-        -   depends_on:
-            -   task_key: production_product_list_price_history
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_model_illustration
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_model_illustration
-        -   depends_on:
-            -   task_key: production_product_model_illustration
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_model_product_description_culture
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_model_product_description_culture
-        -   depends_on:
-            -   task_key: initialise
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_photo
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_photo
-        -   depends_on:
-            -   task_key: production_product_photo
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_product_photo
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_product_photo
-        # -   depends_on:
-        #     -   task_key: production_product_product_photo
-        #     existing_cluster_id: 1003-160019-i21cm8l3
-        #     notebook_task:
-        #         base_parameters:
-        #             table: production_product_review
-        #         notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-        #         source: WORKSPACE
-        #     task_key: production_product_review
-        -   depends_on:
-            -   task_key: production_product_product_photo
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_product_subcategory
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_product_subcategory
-        -   depends_on:
-            -   task_key: production_product_subcategory
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_scrap_reason
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_scrap_reason
-        -   depends_on:
-            -   task_key: production_scrap_reason
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_transaction_history
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_transaction_history
-        -   depends_on:
-            -   task_key: production_transaction_history
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_transaction_history_archive
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_transaction_history_archive
-        -   depends_on:
-            -   task_key: production_transaction_history_archive
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_unit_measure
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_unit_measure
-        -   depends_on:
-            -   task_key: production_unit_measure
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_work_order
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_work_order
-        -   depends_on:
-            -   task_key: production_work_order
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: production_work_order_routing
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: production_work_order_routing
-        -   depends_on:
-            -   task_key: production_work_order_routing
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: purchasing_product_vendor
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: purchasing_product_vendor
-        -   depends_on:
-            -   task_key: purchasing_product_vendor
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: purchasing_purchase_order_detail
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: purchasing_purchase_order_detail
-        -   depends_on:
-            -   task_key: purchasing_purchase_order_detail
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: purchasing_purchase_order_header
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: purchasing_purchase_order_header
-        -   depends_on:
-            -   task_key: purchasing_purchase_order_header
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: purchasing_ship_method
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: purchasing_ship_method
-        -   depends_on:
-            -   task_key: purchasing_ship_method
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: purchasing_vendor
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: purchasing_vendor
-        -   depends_on:
-            -   task_key: purchasing_vendor
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_country_region_currency
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_country_region_currency
-        -   depends_on:
-            -   task_key: sales_country_region_currency
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_credit_card
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_credit_card
-        -   depends_on:
-            -   task_key: initialise
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_currency
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_currency
-        -   depends_on:
-            -   task_key: sales_currency
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_currency_rate
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_currency_rate
-        -   depends_on:
-            -   task_key: sales_currency_rate
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_customer
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_customer
-        -   depends_on:
-            -   task_key: sales_customer
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_person_credit_card
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_person_credit_card
-        -   depends_on:
-            -   task_key: sales_person_credit_card
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_sales_order_detail
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_sales_order_detail
-        -   depends_on:
-            -   task_key: sales_sales_order_detail
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_sales_order_header
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_sales_order_header
-        -   depends_on:
-            -   task_key: sales_sales_order_header
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_sales_order_header_sales_reason
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_sales_order_header_sales_reason
-        -   depends_on:
-            -   task_key: sales_sales_order_header_sales_reason
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_sales_person
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_sales_person
-        -   depends_on:
-            -   task_key: sales_sales_person
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_sales_person_quota_history
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_sales_person_quota_history
-        -   depends_on:
-            -   task_key: sales_sales_person_quota_history
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_sales_reason
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_sales_reason
-        -   depends_on:
-            -   task_key: sales_sales_reason
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_sales_tax_rate
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_sales_tax_rate
-        -   depends_on:
-            -   task_key: sales_sales_tax_rate
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_sales_territory
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_sales_territory
-        -   depends_on:
-            -   task_key: sales_sales_territory
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_sales_territory_history
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_sales_territory_history
-        -   depends_on:
-            -   task_key: sales_sales_territory_history
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_shopping_cart_item
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_shopping_cart_item
-        -   depends_on:
-            -   task_key: sales_shopping_cart_item
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_special_offer
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_special_offer
-        -   depends_on:
-            -   task_key: sales_special_offer
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_special_offer_product
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_special_offer_product
-        -   depends_on:
-            -   task_key: sales_special_offer_product
-            existing_cluster_id: 1003-160019-i21cm8l3
-            notebook_task:
-                base_parameters:
-                    table: sales_store
-                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
-                source: WORKSPACE
-            task_key: sales_store
+            task_key: fact_strategy_plan
 
         - task_key: finalise
           depends_on:
-            - task_key: hr_department
-            - task_key: hr_employee
-            - task_key: hr_employee_department_history
-            - task_key: hr_employee_pay_history
-            # - task_key: hr_job_candidate
-            - task_key: hr_shift
-            - task_key: person_address
-            - task_key: person_address_type
-            - task_key: person_business_entity
-            - task_key: person_business_entity_address
-            - task_key: person_business_entity_contact
-            - task_key: person_contact_type
-            - task_key: person_country_region
-            - task_key: person_email_address
-            - task_key: person_password
-            - task_key: person_person
-            - task_key: person_person_phone
-            - task_key: person_phone_number_type
-            - task_key: person_state_province
-            - task_key: production_bill_of_materials
-            - task_key: production_culture
-            # - task_key: production_document
-            - task_key: production_illustration
-            - task_key: production_location
-            - task_key: production_product
-            - task_key: production_product_category
-            - task_key: production_product_cost_history
-            - task_key: production_product_description
-            - task_key: production_product_document
-            - task_key: production_product_inventory
-            - task_key: production_product_list_price_history
-            # - task_key: production_product_model
-            - task_key: production_product_model_illustration
-            - task_key: production_product_model_product_description_culture
-            - task_key: production_product_photo
-            - task_key: production_product_product_photo
-            # - task_key: production_product_review
-            - task_key: production_product_subcategory
-            - task_key: production_scrap_reason
-            - task_key: production_transaction_history
-            - task_key: production_transaction_history_archive
-            - task_key: production_unit_measure
-            - task_key: production_work_order
-            - task_key: production_work_order_routing
-            - task_key: purchasing_product_vendor
-            - task_key: purchasing_purchase_order_detail
-            - task_key: purchasing_purchase_order_header
-            - task_key: purchasing_ship_method
-            - task_key: purchasing_vendor
-            - task_key: sales_country_region_currency
-            - task_key: sales_credit_card
-            - task_key: sales_currency
-            - task_key: sales_currency_rate
-            - task_key: sales_customer
-            - task_key: sales_person_credit_card
-            - task_key: sales_sales_order_detail
-            - task_key: sales_sales_order_header
-            - task_key: sales_sales_order_header_sales_reason
-            - task_key: sales_sales_person
-            - task_key: sales_sales_person_quota_history
-            - task_key: sales_sales_reason
-            - task_key: sales_sales_tax_rate
-            - task_key: sales_sales_territory
-            - task_key: sales_sales_territory_history
-            - task_key: sales_shopping_cart_item
-            - task_key: sales_special_offer
-            - task_key: sales_special_offer_product
-            - task_key: sales_store
+            - task_key: dim_account
+            - task_key: dim_channel
+            - task_key: dim_currency
+            - task_key: dim_customer
+            - task_key: dim_date
+            - task_key: dim_employee
+            - task_key: dim_entity
+            - task_key: dim_geography
+            - task_key: dim_machine
+            - task_key: dim_outage
+            - task_key: dim_product
+            - task_key: dim_product_category
+            - task_key: dim_product_sub_category
+            - task_key: dim_promotion
+            - task_key: dim_sales_territory
+            - task_key: dim_scenario
+            - task_key: dim_store
+            - task_key: fact_exchange_rate
+            - task_key: fact_inventory
+            - task_key: fact_it_machine
+            - task_key: fact_it_sla
+            - task_key: fact_online_sales
+            - task_key: fact_sales
+            - task_key: fact_sales_quota
+            - task_key: fact_strategy_plan
           notebook_task:
             notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/finalise
             source: WORKSPACE
-          existing_cluster_id: 1003-160019-i21cm8l3
+          existing_cluster_id: 0317-110841-x2mt4zty
       tags:
         dev: shaun_ryan
       parameters:
