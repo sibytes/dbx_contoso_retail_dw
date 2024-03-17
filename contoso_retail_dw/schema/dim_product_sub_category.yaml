@@ -1,0 +1,34 @@
+fields:
+-   metadata: {}
+    name: ProductSubcategoryKey
+    nullable: true
+    type: integer
+-   metadata: {}
+    name: ProductSubcategoryLabel
+    nullable: true
+    type: integer
+-   metadata: {}
+    name: ProductSubcategoryName
+    nullable: true
+    type: string
+-   metadata: {}
+    name: ProductSubcategoryDescription
+    nullable: true
+    type: string
+-   metadata: {}
+    name: ProductCategoryKey
+    nullable: true
+    type: integer
+-   metadata: {}
+    name: ETLLoadID
+    nullable: true
+    type: integer
+-   metadata: {}
+    name: LoadDate
+    nullable: true
+    type: timestamp
+-   metadata: {}
+    name: UpdateDate
+    nullable: true
+    type: timestamp
+type: struct

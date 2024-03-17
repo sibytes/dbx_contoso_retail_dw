@@ -90,3 +90,28 @@ checkpoints
 # MAGIC %sql
 # MAGIC
 # MAGIC select * from dev_hub.stage_contoso_retail_dw.sales_currency_rate
+
+# COMMAND ----------
+
+from etl import tables, PROJECT
+import json
+import yaml
+
+format = "csv"
+ext = "csv"
+filename_mask = f"{table}-*"
+env = "dev"
+options = {"sep": "|", "header": True, "inferSchema": True}
+root = f"/Volumes/{env}_landing/{PROJECT}/{PROJECT}/{format}"
+
+for table, details in tables().items():
+  path = f"{root}/{table}/*/{filename_mask}.{ext}"
+
+  df = spark.read.format("csv").options(**options).load(path)
+  schema = json.loads(df.schema.json())
+  with open(f"../schema/{table}.json", "w", encoding="utf-8") as f:
+    f.write(json.dumps(schema, indent=4))
+
+  with open(f"../schema/{table}.yaml", "w", encoding="utf-8") as f:
+    f.write(yaml.safe_dump(schema, indent=4))
+
