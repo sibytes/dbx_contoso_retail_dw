@@ -13,7 +13,7 @@ def tables():
       "filename": "dim_account",
       "default": AutoloaderTable,
       "primary_keys": [
-        "AccountKey"
+        "account_key"
       ]
     },
     "dim_channel": {
@@ -21,7 +21,7 @@ def tables():
       "filename": "dim_channel",
       "default": AutoloaderTable,
       "primary_keys": [
-        "ChannelKey"
+        "channel_key"
       ]
     },
     "dim_currency": {
@@ -29,7 +29,7 @@ def tables():
       "filename": "dim_currency",
       "default": AutoloaderTable,
       "primary_keys": [
-        "CurrencyKey"
+        "currency_key"
       ]
     },
     "dim_customer": {
@@ -37,7 +37,7 @@ def tables():
       "filename": "dim_customer",
       "default": AutoloaderTable,
       "primary_keys": [
-        "CustomerKey"
+        "customer_key"
       ]
     },
     "dim_date": {
@@ -45,7 +45,7 @@ def tables():
       "filename": "dim_date",
       "default": AutoloaderTable,
       "primary_keys": [
-        "Datekey"
+        "date_key"
       ]
     },
     "dim_employee": {
@@ -53,7 +53,7 @@ def tables():
       "filename": "dim_employee",
       "default": AutoloaderTable,
       "primary_keys": [
-        "EmployeeKey"
+        "employee_key"
       ]
     },
     "dim_entity": {
@@ -61,7 +61,7 @@ def tables():
       "filename": "dim_entity",
       "default": AutoloaderTable,
       "primary_keys": [
-        "EntityKey"
+        "entity_key"
       ]
     },
     "dim_geography": {
@@ -69,7 +69,7 @@ def tables():
       "filename": "dim_geography",
       "default": AutoloaderTable,
       "primary_keys": [
-        "GeographyKey"
+        "geography_key"
       ]
     },
     "dim_machine": {
@@ -77,7 +77,7 @@ def tables():
       "filename": "dim_machine",
       "default": AutoloaderTable,
       "primary_keys": [
-        "MachineKey"
+        "machine_key"
       ]
     },
     "dim_outage": {
@@ -85,7 +85,7 @@ def tables():
       "filename": "dim_outage",
       "default": AutoloaderTable,
       "primary_keys": [
-        "OutageKey"
+        "outage_key"
       ]
     },
     "dim_product": {
@@ -93,7 +93,7 @@ def tables():
       "filename": "dim_product",
       "default": AutoloaderTable,
       "primary_keys": [
-        "ProductKey"
+        "product_key"
       ]
     },
     "dim_product_category": {
@@ -101,7 +101,7 @@ def tables():
       "filename": "dim_product_category",
       "default": AutoloaderTable,
       "primary_keys": [
-        "ProductCategoryKey"
+        "product_category_key"
       ]
     },
     "dim_product_sub_category": {
@@ -109,7 +109,7 @@ def tables():
       "filename": "dim_product_sub_category",
       "default": AutoloaderTable,
       "primary_keys": [
-        "ProductSubcategoryKey"
+        "product_subcategory_key"
       ]
     },
     "dim_promotion": {
@@ -117,7 +117,7 @@ def tables():
       "filename": "dim_promotion",
       "default": AutoloaderTable,
       "primary_keys": [
-        "PromotionKey"
+        "promotion_key"
       ]
     },
     "dim_sales_territory": {
@@ -125,7 +125,7 @@ def tables():
       "filename": "dim_sales_territory",
       "default": AutoloaderTable,
       "primary_keys": [
-        "SalesTerritoryKey"
+        "sales_territory_key"
       ]
     },
     "dim_scenario": {
@@ -133,7 +133,7 @@ def tables():
       "filename": "dim_scenario",
       "default": AutoloaderTable,
       "primary_keys": [
-        "ScenarioKey"
+        "scenario_key"
       ]
     },
     "dim_store": {
@@ -141,7 +141,7 @@ def tables():
       "filename": "dim_store",
       "default": AutoloaderTable,
       "primary_keys": [
-        "StoreKey"
+        "store_key"
       ]
     },
     "fact_exchange_rate": {
@@ -149,7 +149,7 @@ def tables():
       "filename": "fact_exchange_rate",
       "default": AutoloaderTable,
       "primary_keys": [
-        "ExchangeRateKey"
+        "exchange_rate_key"
       ]
     },
     "fact_inventory": {
@@ -157,7 +157,7 @@ def tables():
       "filename": "fact_inventory",
       "default": AutoloaderTable,
       "primary_keys": [
-        "InventoryKey"
+        "inventory_key"
       ]
     },
     "fact_it_machine": {
@@ -165,7 +165,7 @@ def tables():
       "filename": "fact_it_machine",
       "default": AutoloaderTable,
       "primary_keys": [
-        "ITMachinekey"
+        "it_machine_key"
       ]
     },
     "fact_it_sla": {
@@ -173,7 +173,7 @@ def tables():
       "filename": "fact_it_sla",
       "default": AutoloaderTable,
       "primary_keys": [
-        "ITSLAkey"
+        "is_sla_key"
       ]
     },
     "fact_online_sales": {
@@ -181,7 +181,7 @@ def tables():
       "filename": "fact_online_sales",
       "default": AutoloaderTable,
       "primary_keys": [
-        "OnlineSalesKey"
+        "online_sales_key"
       ]
     },
     "fact_sales": {
@@ -189,7 +189,7 @@ def tables():
       "filename": "fact_sales",
       "default": AutoloaderTable,
       "primary_keys": [
-        "SalesKey"
+        "sales_key"
       ]
     },
     "fact_sales_quota": {
@@ -197,7 +197,7 @@ def tables():
       "filename": "fact_sales_quota",
       "default": AutoloaderTable,
       "primary_keys": [
-        "SalesQuotaKey"
+        "sales_quota_key"
       ]
     },
     "fact_strategy_plan": {
@@ -205,7 +205,7 @@ def tables():
       "filename": "fact_strategy_plan",
       "default": AutoloaderTable,
       "primary_keys": [
-        "StrategyPlanKey"
+        "strategy_planning_key"
       ]
     }
   }
