@@ -15,7 +15,7 @@ create table if not exists {{database}}._audit
     snapshot_date date not null,
     process_id bigint not null,
     state_load_date timestamp not null,
-    hub_load_date timestamp null
+    hub_load_date timestamp
 )
 USING DELTA
 TBLPROPERTIES (
