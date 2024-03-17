@@ -11,7 +11,7 @@ resources:
           existing_cluster_id: 0317-110841-x2mt4zty
 
         -   depends_on:
-            -   task_key: dim_account
+            -   task_key: initialise
             existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
@@ -31,7 +31,7 @@ resources:
             task_key: dim_channel
 
         -   depends_on:
-            -   task_key: 
+            -   task_key: dim_channel
             existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
                 base_parameters:
@@ -141,6 +141,16 @@ resources:
             task_key: dim_promotion
 
         -   depends_on:
+            -   task_key: dim_product_sub_category
+            existing_cluster_id: 0317-110841-x2mt4zty
+            notebook_task:
+                base_parameters:
+                    table: dim_product_category
+                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
+                source: WORKSPACE
+            task_key: dim_product_category
+
+        -   depends_on:
             -   task_key: dim_promotion
             existing_cluster_id: 0317-110841-x2mt4zty
             notebook_task:
@@ -229,6 +239,26 @@ resources:
                 notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
                 source: WORKSPACE
             task_key: fact_strategy_plan
+
+        -   depends_on:
+            -   task_key: fact_strategy_plan
+            existing_cluster_id: 0317-110841-x2mt4zty
+            notebook_task:
+                base_parameters:
+                    table: fact_exchange_rate
+                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
+                source: WORKSPACE
+            task_key: fact_exchange_rate
+
+        -   depends_on:
+            -   task_key: fact_exchange_rate
+            existing_cluster_id: 0317-110841-x2mt4zty
+            notebook_task:
+                base_parameters:
+                    table: fact_sales_quota
+                notebook_path: /Repos/shaun.ryan@shaunchiburihotmail.onmicrosoft.com/dbx_contoso_retail_dw/contoso_retail_dw/src/load_table
+                source: WORKSPACE
+            task_key: fact_sales_quota
 
         - task_key: finalise
           depends_on:
