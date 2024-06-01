@@ -23,12 +23,13 @@ class AutoloaderTable(BaseTable):
       "mode": "true",
       "columnNameOfCorruptRecord": "_corrupt_record",
       # csv
-      "header": "true",
+      "header": "false",
       "mode": "PERMISSIVE",
       "encoding": "utf-8",
       "delimiter": "|",
       "escape": '"',
       "nullValue": "",
+      "skipRows": 1,
       "quote": '"',
       "emptyValue": ""
     }
@@ -116,8 +117,6 @@ class AutoloaderTable(BaseTable):
           _metadata.file_name,              
           _metadata.file_size, 
           _metadata.file_modification_time,             
-          _metadata.file_block_start,       
-          _metadata.file_block_length,
           if(invalid_count=0, true, false) as schema_valid,   
           _snapshot_date as snapshot_date,                     
           _process_id as process_id,
@@ -130,8 +129,6 @@ class AutoloaderTable(BaseTable):
           file_name,              
           file_size, 
           file_modification_time,             
-          file_block_start,       
-          file_block_length,  
           snapshot_date,                     
           process_id  
     """

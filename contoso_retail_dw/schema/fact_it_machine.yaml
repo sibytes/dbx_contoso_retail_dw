@@ -1,6 +1,6 @@
 fields:
 -   metadata: {}
-    name: it_machinekey
+    name: it_machine_key
     nullable: true
     type: integer
 -   metadata: {}

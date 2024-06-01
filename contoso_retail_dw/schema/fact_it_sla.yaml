@@ -1,6 +1,6 @@
 fields:
 -   metadata: {}
-    name: itsl_akey
+    name: it_sla_key
     nullable: true
     type: integer
 -   metadata: {}

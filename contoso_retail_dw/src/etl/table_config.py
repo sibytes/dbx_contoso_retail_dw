@@ -173,7 +173,7 @@ def tables():
       "filename": "fact_it_sla",
       "default": AutoloaderTable,
       "primary_keys": [
-        "is_sla_key"
+        "it_sla_key"
       ]
     },
     "fact_online_sales": {

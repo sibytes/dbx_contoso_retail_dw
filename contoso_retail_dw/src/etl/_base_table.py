@@ -43,7 +43,7 @@ class BaseTable(ABC):
     self.extension = "csv"
     self.schema_version = schema_version
     root = f"/{self._VOLUME_ROOT}/{self.environment}_"
-    self.source_path = f"{root}{self._SRC_CATALOG}/{self.project}/{self.project}/{self.filename}/*/{self.filename}-*.{self.extension}"
+    self.source_path = f"{root}{self._SRC_CATALOG}/{self.project}/{self.project}/{self.extension}/{self.filename}/*/{self.filename}-*.{self.extension}"
     self.checkpoint_path = f"{root}{self._DST_CATALOG}/checkpoints/{self.db}/{self.stage_db}_{self.name}"
     if self.filename is not None:
       self.schema:StructType = self._load_schema(name = self.name)

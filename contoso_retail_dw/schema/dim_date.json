@@ -2,7 +2,7 @@
     "fields": [
         {
             "metadata": {},
-            "name": "datekey",
+            "name": "date_key",
             "nullable": true,
             "type": "timestamp"
         },
